@@ -1,0 +1,69 @@
+/* Include Foundation */
+
+@import '../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+body {
+    background-color: floralwhite;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    color: slategray;
+    margin-bottom: 5px;
+}
+
+ul {
+    @include grid-row();
+    list-style-type: none;
+    padding: 0px;
+
+    li {
+        @include grid-column(12);
+
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 80px;
+            width: 30%;
+        }
+
+
+
+        p {
+            text-align: center;
+            color: cornflowerblue;
+            font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 20px;
+    
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 1%;
+            width: 10%;
+            color: whitesmoke;
+
+        }
+        
+        .like {
+            background-color: cornflowerblue;
+            margin-left: 460px;
+            
+        }
+
+        .nope {
+            background-color: lightsalmon;
+        }
+    }
+
+.faded {
+    opacity: 0.3;
+}
+
+}

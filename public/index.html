@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>domesticated-remake</title>
+    <!-- add css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- add js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="app.js"></script>
+
+    <script id="user-template" type="x-mustache-template">
+        <img src={{ image }}></img>
+        <p>{{ name }}</p>
+        <button class="like">Like</button>
+        <button class="nope">Nope</button>
+    </script>
+</head>
+    
+<body>
+    <h1>Christian Fish Farmers Match</h1>
+
+    <section id="users">
+        <ul></ul>
+    </section>
+</body>
+
+</html>
